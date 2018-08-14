@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="StegTheme" parent="Theme.AppCompat.Light" >
+        <item name="colorPrimaryDark">@android:color/holo_blue_light</item>
+        <item name="android:colorForeground">@android:color/holo_blue_dark</item>
+        <item name="android:navigationBarColor">@android:color/holo_orange_dark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.seecs.mushtaq"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_title"
+        android:supportsRtl="true"
+        android:theme="@style/StegTheme">
+        <activity
+            android:name="com.seecs.mushtaq.MainActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:theme="@style/StegTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.seecs.mushtaq.EncodeActivity"
+            android:label="@string/encode"
+            android:parentActivityName="com.seecs.mushtaq.MainActivity">
+        </activity>
+
+        <activity
+            android:name="com.seecs.mushtaq.DecodeActivity"
+            android:label="@string/decode"
+            android:parentActivityName="com.seecs.mushtaq.MainActivity">
+        </activity>
+
+        <activity
+            android:name="com.seecs.mushtaq.SendImageActivity"
+            android:label="@string/send_image"
+            android:parentActivityName="com.seecs.mushtaq.MainActivity">
+        </activity>
+    </application>
+
+</manifest>
